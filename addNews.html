@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add news</title>
+    <link rel="stylesheet" href="site.css" type="text/css">
+    <link href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./site-responsive.css" type="text/css">
+</head>
+<body id="app">
+    <header>
+
+    </header>
+
+
+    <div class="content-layout">
+        <section class="feedback">
+            <h1>Thêm bài báo</h1>
+            
+
+            <form method="post" action="#" autocomplete="off">
+                <div class="element-form" id="list-cate">
+                    
+                </div>
+                <div class="element-form">
+                    <div class="form-lable">Tiêu đề</div>
+                    <input type="text" onkeyup="handleOnChange(event)" id="title">
+                    <div class="valid">
+                        <span style="color:red; font-style:italic" id="valid-title"></span>
+                    </div>
+                </div>
+
+                <div class="element-form">
+                    <div class="form-lable">Mô tả</div>
+                    <input type="text" onkeyup="handleOnChange(event)"  id="desc">
+                    <div class="valid">
+                        <span style="color:red; font-style:italic"  id="valid-desc"></span>
+                    </div>
+                </div>
+
+                <div class="element-form">
+                    <div class="form-lable">Nội dung</div>
+                    <textarea id="content" onkeyup="handleOnChange(event)" ></textarea>
+                    <div class="valid">
+                        <span style="color:red; font-style:italic" id="valid-content"></span>
+                    </div>
+                </div>
+
+                <div class="element-form">
+                    <div class="form-lable">Hình ảnh</div>
+                    <input type="file" name="file" onkeyup="handleOnChange(event)" id="image">
+                    <div >
+                        <img width="380px" src="./Images/image-available.jpg" id="showImg" alt="Thêm ảnh để xem trước"  style="margin:10px auto; display:block;">
+                    </div>
+                    <div class="valid">
+                        <span style="color:red; font-style:italic" id="valid-img"></span>
+                    </div>
+                </div>
+                <div id="button" style="margin:5px; text-align: center;">   
+                    <button type="button" id="sendAdd" class="btn btn-primary">Đăng bài báo</button>
+                    <a type="button" id="sendBack" href="./NewsManage.html" class="btn btn-warning">Quay lại </a>
+                </div>  
+                <div id="status" style="margin: 10px auto;">
+
+                </div>
+                
+            </form>
+        </section >
+    </div>
+
+    <footer>
+
+    </footer>
+
+
+    <script src="./js/header.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/addNews.js"></script>
+    <script src="./js/event.js"></script>  
+</body>
+</html>
